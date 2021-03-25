@@ -21,6 +21,7 @@
 }
 .header-bg .content .data .names{
     color: #fff;
+    cursor: pointer;
     margin-left: auto;
     font-size: 18px;
     text-transform: uppercase;

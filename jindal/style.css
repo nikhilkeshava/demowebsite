@@ -1,5 +1,5 @@
 .navbar { background-color: #484848; }
-.navbar .navbar-nav .nav-link { color: #000; margin-left: 20px; text-transform: uppercase;}
+.navbar .navbar-nav .nav-link { color: #000; margin-left: 0px; text-transform: uppercase;}
 .navbar .navbar-nav .nav-link:hover { color: #685656; }
 .navbar .navbar-nav .active > .nav-link { color: #000; }
 
@@ -8,6 +8,7 @@
     margin-top: 70vh;
     height: 15vh;
     background-color: rgba(0,0,0,0.5);
+    width: 100%;
 }
 .header-bg .content .data{
     margin-top: 30px;
@@ -20,7 +21,7 @@
 }
 .header-bg .content .data .names{
     color: #fff;
-    margin-left: 40px;
+    margin-left: auto;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -35,11 +36,10 @@
     width: 100%;
     height: 100%;
     position: relative;
-    margin: 3vh 0;
     
 }
 .jindal-content .head-content{
-    margin: 9vh 0;
+    margin: 0;
     font-size: 30px;
     letter-spacing: 2px;
 
@@ -155,16 +155,14 @@
     border-color: #f8f9fa;
     width: 40vh;
 }
-.row{
-    margin-top: 15vh;
-}
+
 .copyrights .global-navsgrid{
     list-style: none;
     display: flex;
 }
 .copyrights .global-navsgrid .global-navslist{
     padding: 0 12px;
-    border-right:2px oldlace solid;   
+    border-right:2px #fff solid;   
 }
 .copyrights{
     position: relative;

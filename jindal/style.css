@@ -86,7 +86,7 @@
     width: 100%;
     height: 100%;
     position:relative;
-    padding-top:15vh;
+    padding:5vh 0;
 }
 .map .elements{
     margin-top: 10vh;

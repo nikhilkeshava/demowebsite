@@ -29,9 +29,11 @@
 .header-bg .content .data .active{
     
     border-bottom: 2px #f27920 solid;
+    cursor: pointer;
 }
 .header-bg .content .data .names:hover{
     border-bottom: 2px #f27920 solid;
+    cursor: pointer;
 }
 .jindal-content{
     width: 100%;

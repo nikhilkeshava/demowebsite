@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <title>Jindal website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <header>
+        <!--- Navbar --->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#"> <img src="images/logo.png" alt="" width="100" height="80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                    <i class="fa fa-bars" style="color: #000;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nvbCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active pl-1">
+                            <a class="nav-link" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">Investor Relations</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">CSR</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">Career</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">Media </a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">Contact Us </a>
+                        </li>
+                        <button class="btn-toggle btn btn-dark">Dark-Mode</button>
+                        <script>
+                            const btn = document.querySelector(".btn-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
+}
+
+btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
+  } else {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+  }
+  localStorage.setItem("theme", theme);
+});
+                        </script>
+                    </ul>
+
+                    <div class="searching">
+                        <center>
+                            <a href="" class="search-open" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg id="i-search" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <circle cx="14" cy="14" r="12"></circle>
+                                    <path d="M23 23 L30 30"></path>
+                                </svg>
+                            </a>
+                           
+                        </center>
+                       
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Search</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <form name="search" action="" method="post">
+                                        <input type="text" class="mr-search" placeholder="Search" name="searchtitle">
+                                        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                               
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--# Navbar #-->
+        </header>
+        
+
+    <div class="down-menu">
+        <div class="container upper-line">
+            <ul class="list-inline row">
+
+                <li class="dropdown">
+                    <a class="active-bred" href="#">Company Profile</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Chairmen’s Message</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Leadership</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Milestones</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Awards</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Jubilant Bhartia Group</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <section class="banner">
+        <div class="header-banner">
+            <div class="container">
+                <div class="col-md-6">
+
+                    <h2>
+                        <span> Company Profile</span>
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+   
+  
+    <section class="content">
+        <div class="bg-blue margintop-8">
+            <div class="container">
+                <div class="content-padding">
+                    <h2 class="font-18 font-100 text-white line-h30 pt-2 text-md-left text-center">
+                        Jubilant FoodWorks Limited (JFL/Company) is part of the Jubilant Bhartia Group and is one of the
+                        India&rsquo;s largest food service Company. The Company holds the master franchise rights for
+                        two international brands, Domino&rsquo;s Pizza and Dunkin&#39; Donuts addressing two different
+                        food market segments. The Company also launched its first homegrown brand &ndash; Hong&rsquo;s
+                        Kitchen in Chinese cuisine segment.<br />
+                        <br />
+                        The Company currently operates more than 1260 outlets for Domino&rsquo;s Pizza, Dunkin&#39;
+                        Donuts and Hong&#39;s Kitchen and is a market leader in pizza segment. The Company has more than
+                        30,000 brand ambassadors committed to deliver value to its customers.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 brand-box">
+                    <div class="brandimg">
+                        <img alt="dominos_about" class="logo_display" src="images/dominos_about.jpg" class="img-fluid">
+                    </div>
+                    <p>
+                        The Company has the exclusive rights to develop and operate Domino's Pizza Restaurants in India,
+                        Sri Lanka, Bangladesh and Nepal. The Company launched its first Domino’s Pizza restaurant in
+                        Delhi in January 1996. The Company is the largest franchisee for Domino’s brand outside U.S. At
+                        present, it operates in India, and through its subsidiary companies in Sri Lanka and Bangladesh.
+                    </p>
+                    <div class="row btm-line">
+                        <div class="col-7 draw-red-line">
+                            &nbsp;</div>
+                        <div class="col-5 draw-blue-line">
+                            &nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-md-3 brand-box">
+                    <div class="brandimg">
+                        <img alt="dunkins-donuts" class="logo_display" height="" src="images/dunkins-donuts.jpg">
+                    </div>
+                    <p>
+                        The Company has the exclusive rights to develop and operate Dunkin' Donuts Restaurants in India.
+                        The Company launched first Dunkin' restaurant in Delhi in April 2012. Dunkin serves wide variety
+                        of donuts, coffee, beverages, sandwiches and other goods.</p>
+                    <div class="row btm-line">
+                        <div class="col-4 draw-orange-line">
+                            &nbsp;</div>
+                        <div class="col-8 draw-pink-line">
+                            &nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-md-3 brand-box">
+                    <div class="brandimg">
+                        <img alt="hong_logo2" class="logo_display" height="" src="images/hong_logo2.png">
+                    </div>
+                    <p>
+                        JFL marked its entry into the Chinese cuisine segment with the launch of its first home-grown
+                        brand – Hong’s Kitchen. The Company launched first restaurant in Gurugram in March 2019. The
+                        restaurant has young, international-looking and trendy design inspired by the colours and the
+                        hustle of Asian street markets.</p>
+                    <div class="row btm-line">
+                        <div class="col-8 draw-red-line1">
+                            &nbsp;</div>
+                        <div class="col-4 draw-green-line">
+                            &nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-md-3 brand-box">
+                    <div class="brandimg">
+                        <img alt="ChefBoss-Logo" class="logo_display" height="" src="images/ChefBoss-Logo.png">
+                    </div>
+                    <p>
+                        JFL marked its entry into the FMCG vertical with the launch ChefBoss. It offers range of ready
+                        to cook sauces, pastes &amp; gravies. ChefBoss has a mission to open you up to new possibilities
+                        in the kitchen. It’s the perfect culinary toolkit to explore different Indian and international
+                        cuisine.</p>
+                    <div class="row btm-line">
+                        <div class="col-4 draw-red-line">
+                            &nbsp;</div>
+                        <div class="col-8 draw-pink-line">
+                            &nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="content-padding">
+        <div class="container text-center pad-10">
+            <h3 class="block-head mb-2">Business Strengths</h3>
+            <div class="col-4 draw-red-line text-center" style="display: -webkit-inline-box; height: 1px;"></div>
+            <p class="text-center">
+                With a robust business model, efficient supply chain, extensive network of certified partners and
+                presence across the country, JFL is well-positioned to utilize growth opportunities.</p>
+        </div>
+        <div class="container icon-box">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img  src="images/icons/infa-icon.jpg" class="img-fluid">
+                    <h3>
+                        Infrastructural Excellence</h3>
+                    <p>
+                        <span>1260+</span> Restaurants<br>
+                        <span>12</span>&nbsp;Supply Chain /<br>
+                        Distribution Centre’s
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img  src="images/icons/india_map.jpg" class="img-fluid">
+                    <h3>
+                        Pan India Presence</h3>
+                    <p>
+                        Located across<br>
+                        <span>280+</span> Cities
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img  src="images/icons/tech-icon.jpg" class="img-fluid">
+                    <h3>
+                        Technology Driven</h3>
+                    <p>
+                        Leveraging disruptive<br>
+                        technology across<br>
+                        operations</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img  src="images/icons/vison-icon.jpg" class="img-fluid">
+                    <h3>
+                        Visionary Leadership</h3>
+                    <p>
+                        Experienced senior team<br>
+                        at strategic levels</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img  src="images/icons/team-icon.jpg" class="img-fluid">
+                    <h3>
+                        Committed Team</h3>
+                    <p>
+                        Driven by <span>30,000+ </span><br>
+                        talented employees</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img  src="images/icons/partner-icon.jpg" class="img-fluid">
+                    <h3>
+                        Certified Partners</h3>
+                    <p>
+                        Network of <span>150+</span><br>
+                        HACCP Certified<br>
+                        food business partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="text-center">
+            <img class="img-fluid" src="images/image/20imguf_supplychain-12.jpg" class="img-fluid">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-6">
+                    <div class="col-align">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Company Profile</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Milestones</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="">Jubilant Bhartia Group</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 ">
+                    <div class="col-align">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li><a href="#">Domino's Pizza</a></li>
+                            <li><a href="#">Dunkin' Donuts</a></li>
+                            <li><a href="#">Hong's Kitchen</a></li>
+                            <li><a href="#">ChefBoss</a></li>
+                            <li><a href="#">Franchise Information</a></li>
+                        </ul>
+                        <h3> Media</h3>
+                        <ul>
+                            <li><a href="#">Press Release</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2  col-sm-6">
+                    <div class="col-align">
+                        <h3>CSR</h3>
+                        <ul>
+                            <li><a href="#">Key CSR Engagements</a></li>
+                            <li><a href="#">Corporate Citizenship</a></li>
+                            <li><a href="#">Reports</a></li>
+                        </ul>
+                        <h3 class="mt-4">Career</h3>
+                        <ul>
+                            <li><a href="/#">Overview</a></li>
+                            <li><a href="#">Fraudulent Recruiting</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-6">
+                    <div class="col-align">
+                        <h3>Investor Relations</h3>
+                        <ul>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Financial Information</a></li>
+                            <li><a href="">Reports &amp; Presentations</a></li>
+                            <li><a href="#">Governance</a></li>
+                            <li><a href="#">Shareholder Information</a></li>
+                            <li><a href="#">Investor's Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12  social-box">
+                    <div class="social_box pb-3">
+                        <span class="socia_icons">
+                            <img src="images/dominos-icon.png">
+                        </span>
+                        <span class="socia_icons_des">
+                            Domino's Pizza App<br>
+                            <a href="#">Android</a>
+                            &nbsp;
+                            <a href="#">Iphone</a>
+                        </span>
+                    </div>
+
+                    <div class="social_box pb-3">
+                        <span class="socia_icons">
+                            <img src="images/dunkin-donuts-icon.png"></span>
+                        <span class="socia_icons_des pb-2">Dunkin' Donut App
+                            <a href="#">Android</a>
+                            &nbsp;
+                            <a href="#">Iphone</a>
+
+                        </span>
+                    </div>
+
+                    <div class="social_box">
+                        <span class="socia_icons">
+                            <img src="images/hongs.jpg" class="img-fluid"></span>
+                        <span class="socia_icons_des">Hong's Kitchen App<br>
+                            <a href="">Android</a> &nbsp;
+                            <a href="">Iphone</a>
+                        </span>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="row mt-4">
+
+                <div class="col-md-7">
+                    <div class="copyright">
+                        <p style="font-size: 11px;">
+                            <a href="#">Privacy Policy</a> |
+                            <a href="#">Disclaimer</a> |
+                            <a href="#">Terms and Condition</a> |
+                            <a href="#">Sitemap </a> | © Jubilant FoodWorks All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="copyright text-right">
+                        <p style="font-size: 11px;">
+                            Website Designed and Developed by <a href="#">
+                                Nikhil</a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <a href="index.html#" class="top-up" style="display: inline;"><i class="fa fa-arrow-circle-up fa-2x"></i></a>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

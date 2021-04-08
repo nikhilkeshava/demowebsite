@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="500 million+ members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.">
+    <link rel="icon" href="img/favicon.ico">
+    <!--Bootstrap Stylesheet-->
+    <title>Sign Up | LinkedIn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="main">
+
+        <section class="content-padding">
+            <div class="container text-center pad-10">
+                <h3 class="block-head mb-2"> <img src="img/Linkedin-Logo.png" alt="" srcset="" class="img-fluid"
+                        style="width: 20vh; height: auto;"></h3>
+
+                <p class="text-center heading">Make the most of your professional life</p>
+            </div>
+        </section>
+        <script>  
+            function validate(){  
+                var fname=document.myform.fname.value;  
+                var lname=document.myform.lname.value; 
+                var password=document.myform.password.value;  
+                var status=false;  
+                var x=document.myform.email.value;  
+                var atposition=x.indexOf("@");  
+                var dotposition=x.lastIndexOf(".");  
+
+                if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+                alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+                document.getElementById("emailloc").innerHTML= " Please enter your proper email address eg:nikhil@gmail.com";  
+                return false;  
+                }    
+
+                if(fname.length<5){  
+                    document.getElementById("nameloc").innerHTML=  
+                    " Please enter atleast 5 char of your first name";  
+                    status=false;  
+                    }else {  
+                    document.getElementById("nameloc").innerHTML="";  
+                    status=true;  
+                    } 
+                   
+                    if(lname.length<5){  
+                    document.getElementById("lnameloc").innerHTML=  
+                    " Please enter atleast 5 char of your last name";  
+                    status=false;  
+                    }else {  
+                    document.getElementById("lnameloc").innerHTML="";  
+                    status=true;  
+                    }  
+                    if(password.length<6){  
+                        document.getElementById("passwordloc").innerHTML=  
+                        "  Password must be at least 6 char long";  
+                        status=false;  
+                        }else{  
+                        document.getElementById("passwordloc").innerHTML="<p class='color:green'>prefect</p>";  
+                        }  
+                        return status;  
+                    }  
+
+            </script>  
+        <div class="wrapper">
+
+            <section class="form signup">
+
+                <form  name="myform" action="nextpage.html" onsubmit="return validate()" >
+                    <div class="error-text"></div>
+                    <div class="field input">
+                        
+                        <label>First name</label>
+                        <span id="nameloc" style="color: #E94435; font-size: 10px;"></span>
+                        <input type="text" name="fname" >
+                    </div>
+                    <div class="field input">
+                        <label>Last name</label>
+                        <span id="lnameloc" style="color: #E94435; font-size: 10px;"></span>
+                        <input type="text" name="lname" >
+                    </div>
+                    <div class="field input">
+
+                        <label>Email or phone number</label>
+                        <span id="emailloc" style="color: #E94435; font-size: 10px;"></span>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="field input">
+                        <label>Password (6 or more characters)</label>
+                        <span id="passwordloc" style="color: #E94435; font-size: 10px;"></span>
+                        <input type="password" name="password" >
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    
+                    <span class="text-center">
+                        <p class="text-center term">By clicking Agree & Join, you agree to the LinkedIn
+                        <span class="blue">
+                            User Agreement,
+                            Privacy Policy,
+
+                        </span> and
+                        <span class="blue">Cookie Policy.</span>
+                         </p>
+                    </span>
+                    <div class="field button">
+                        <input type="submit" name="submit" value="Agree & Join">
+                    </div>
+                    <div class="orplace">
+                        <p class="text-center">or</p>
+
+                    </div>
+                   
+
+                    <div class="field button">
+                        <button type="button" class="btn btn-outline-primary" style="border-radius: 50px;">
+                            <svg viewBox="0 0 24 24"
+                                width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet"
+                                class="">
+                                <g class="color-icon">
+                                    <path style="fill:#E94435"
+                                        d="M12.1,5.8c1.6-0.1,3.1,0.5,4.3,1.6l2.6-2.7c-1.9-1.8-4.4-2.7-6.9-2.7c-3.8,0-7.2,2-9,5.3l3,2.4C7.1,7.2,9.5,5.7,12.1,5.8z">
+                                    </path>
+                                    <path style="fill:#F8BB15"
+                                        d="M5.8,12c0-0.8,0.1-1.6,0.4-2.3l-3-2.4C2.4,8.7,2,10.4,2,12c0,1.6,0.4,3.3,1.1,4.7l3.1-2.4C5.9,13.6,5.8,12.8,5.8,12z">
+                                    </path>
+                                    <path style="fill:#34A751"
+                                        d="M15.8,17.3c-1.2,0.6-2.5,1-3.8,0.9c-2.6,0-4.9-1.5-5.8-3.9l-3.1,2.4C4.9,20,8.3,22.1,12,22c2.5,0.1,4.9-0.8,6.8-2.3L15.8,17.3z">
+                                    </path>
+                                    <path style="fill:#547DBE"
+                                        d="M22,12c0-0.7-0.1-1.3-0.2-2H12v4h6.1v0.2c-0.3,1.3-1.1,2.4-2.2,3.1l3,2.4C21,17.7,22.1,14.9,22,12z">
+                                    </path>
+                                </g>
+                            </svg><span class="" style="margin-left: 10px;">Join with Google</span></button>
+                    </div>
+
+                </form>
+                <div class="link">Already signed up ? <a href="#" class="blue" style="color: #0a66c2;">Sign In</a></div>
+            </section>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+
+
+        
+        <div class="text-center p-3">
+            <ul class="nav justify-content-center">
+            
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><span class="linked">Linked <span class="in">In</span></span>  © 2020</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Accessibility</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">User Agreement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cookie Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Copyright Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Brand Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Guest Controls</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Community Guidelines</a>
+                  </li>
+              </ul>
+          
+        </div>
+        
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
